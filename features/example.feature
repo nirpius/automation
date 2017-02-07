@@ -1,4 +1,4 @@
-Feature: Wikipedia
+Feature: Example
 As someone who cares about logos
 When I visit Wikipedia
 I should be able to see the Wikipedia logo
