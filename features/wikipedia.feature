@@ -6,3 +6,8 @@ Feature: Checking Wikipedia
   Scenario: Checking for the Wikipedia Logo
     Given I am on the Wikipedia home page
     Then I should see the Wikipedia logo
+
+  Scenario: Searching on the Wikipedia
+    Given I am on the Wikipedia home page
+    When I search for "Test automation"
+    Then I should see the article for "Test automation"
