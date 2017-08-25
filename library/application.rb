@@ -4,8 +4,12 @@ module Library
       @pages = {}
     end
 
-    def home
-      @pages[:home] ||= Pages::HomePage.new
+    def wikipedia_home
+      @pages[:wikipedia_home] ||= Pages::WikipediaHomePage.new
+    end
+
+    def wikipedia_test_automation
+      @pages[:wikipedia_test_automation] ||= Pages::WikipediaTestAutomationPage.new
     end
   end
 end
