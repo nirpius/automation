@@ -1,13 +1,13 @@
 ## Given steps
 
-## When steps
-
-When(/^I navigate to the home page$/) do
-  desktop.home.load
+Given(/^I am on the Wikipedia home page$/) do
+  desktop.wikipedia_home.load
 end
+
+## When steps
 
 ## Then steps
 
-Then(/^I can see the Wikipedia logo$/) do
-  expect(desktop.home).to have_logo
+Then(/^I should see the Wikipedia logo$/) do
+  expect(desktop.wikipedia_home).to have_logo
 end
